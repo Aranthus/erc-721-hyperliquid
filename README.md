@@ -1,78 +1,78 @@
 # Hyperliquid NFT Mint UI
 
-Hyperliquid EVM'de NFT mint etmek için basit bir kullanıcı arayüzü.
+A simple user interface for minting NFTs on Hyperliquid EVM.
 
-## Özellikler
+## Features
 
-- Web3 cüzdan entegrasyonu (MetaMask, vb.)
-- NFT mint etme işlemleri
-- Kontrat bilgilerini görüntüleme
-- Responsive tasarım
+- Web3 wallet integration (MetaMask, etc.)
+- NFT minting operations
+- View contract information
+- Responsive design
 
-## Başlarken
+## Getting Started
 
-### Gereksinimler
+### Requirements
 
 - Node.js
-- npm veya yarn
-- Web3 uyumlu tarayıcı ve cüzdan (MetaMask önerilir)
+- npm or yarn
+- Web3 compatible browser and wallet (MetaMask recommended)
 
-### Kurulum
+### Installation
 
-1. Bağımlılıkları yükleyin:
+1. Install dependencies:
 
 ```bash
 npm install
 ```
 
-2. Development sunucusunu başlatın:
+2. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-veya production için:
+or for production:
 
 ```bash
 npm start
 ```
 
-3. Tarayıcınızda `http://localhost:3000` adresine gidin.
+3. Navigate to `http://localhost:3000` in your browser.
 
-## Big Blocks Modu
+## Big Blocks Mode
 
-Büyük kontratları deploy etmek veya kompleks işlemler yapmak için Big Blocks (Slow Blocks) modunu etkinleştirmeniz gerekebilir:
+For deploying large contracts or performing complex operations, you may need to enable Big Blocks (Slow Blocks) mode:
 
 ```bash
-# Python ile Big Blocks modunu etkinleştirmek için:
+# Enable Big Blocks mode with Python:
 npm run enable-big-blocks-py
 
-# Python ile Big Blocks modunu devre dışı bırakmak için:
+# Disable Big Blocks mode with Python:
 npm run disable-big-blocks-py
 
-# JavaScript ile Big Blocks modunu etkinleştirmek için:
+# Enable Big Blocks mode with JavaScript:
 npm run enable-big-blocks
 ```
 
-## Kontrat Deployment
+## Contract Deployment
 
-Yeni bir SingleImageNFT kontratı deploy etmek için:
+To deploy a new SingleImageNFT contract:
 
 ```bash
 npm run deploy
 ```
 
-## NFT Kontrat Adresi
+## NFT Contract Address
 
-Mevcut deploy edilen NFT kontrat adresi: `0x91E8910B710aE0f4C82B0DDEda8DB87B5600cA63`
+Current deployed NFT contract address: `0x91E8910B710aE0f4C82B0DDEda8DB87B5600cA63`
 
-## Hyperliquid EVM Bilgileri
+## Hyperliquid EVM Information
 
 - Chain ID: 999
 - RPC URL: https://rpc.hyperliquid.xyz/evm
-- Explorer: https://explorer.hyperliquid.xyz/evm
+- Explorer: https://hyperliquid.cloud.blockscout.com
 - Native Token: HYPE
 
-## Lisans
+## License
 
 MIT
