@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperliquid NFT Minter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" onerror="this.src='https://hyperliquid.xyz/favicon.png'">
+                <h1>Hyperliquid ERC-721 contract test</h1>
+            </div>
+            <button id="connect-wallet" class="btn primary">Connect Wallet</button>
+        </header>
+
+        <main>
+            <div class="nft-preview">
+                <div class="nft-image-container">
+                    <img id="nft-image" src="nft-placeholder.jpg" alt="NFT Image" onerror="this.src='https://placehold.co/600x600/252836/FFFFFF/png?text=NFT+Image'">
+                </div>
+                <div class="nft-details">
+                    <h2 id="nft-name">SingleImageNFT</h2>
+                    <div class="nft-description">
+                        <p id="nft-description-text">NFT collection minted on Hyperliquid Mainnet.</p>
+                    </div>
+                    <div class="mint-details">
+                        <div class="detail-item">
+                            <span class="label">Price</span>
+                            <span class="value" id="nft-price">0.05 HYPE</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Supply</span>
+                            <span class="value" id="total-supply">0 / 0</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Contract</span>
+                            <a id="contract-link" href="#" target="_blank" class="value contract-address">0x123...7890</a>
+                        </div>
+                    </div>
+                    <div class="mint-controls">
+                        <div class="mint-amount">
+                            <button id="decrease-amount" class="btn circle">-</button>
+                            <input id="mint-amount" type="number" min="1" max="10" value="1">
+                            <button id="increase-amount" class="btn circle">+</button>
+                        </div>
+                        <button id="mint-button" class="btn primary mint-btn" disabled>Mint NFT</button>
+                    </div>
+                    <div id="transaction-status" class="transaction-status"></div>
+                </div>
+            </div>
+        </main>
+        
+        <div id="notification" class="notification">
+            <p id="notification-message"></p>
+            <button id="notification-close" class="btn close">×</button>
+        </div>
+
+        <footer>
+            <p>Created by aranthus | Chain ID: 999</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
